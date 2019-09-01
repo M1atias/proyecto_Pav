@@ -31,39 +31,38 @@ namespace proyecto.Formularios
             TableProductos.Location = coordenada;
             TableClientes.Location = coordenada;
 
-            BtnConsultarClientes.Width = 150;
-            BtnConsultarProductos.Width = 150;
-            BtnConsultarFacturas.Width = 150;
-            BtnConsultarProveedores.Width = 150;
-            BtnEliminarCliente.Width = 150;
-            BtnEliminarProducto.Width = 150;
-            BtnAnularFactura.Width = 150;
-            BtnEliminarProveedor.Width = 150;
-            BtnModificarCliente.Width = 150;
-            BtnModificarProducto.Width = 150;
-            BtnModificarFactura.Width = 150;
-            BtnModificarProveedor.Width = 150;
-            BtnNuevoCliente.Width = 150;
-            BtnNuevoProducto.Width = 150;
-            BtnNuevaFactura.Width = 180;
-            BtnNuevoProveedor.Width = 150;
-
-            BtnConsultarClientes.Height = 150;
-            BtnConsultarProductos.Height = 150;
-            BtnConsultarFacturas.Height = 150;
-            BtnConsultarProveedores.Height = 150;
-            BtnEliminarCliente.Height = 150;
-            BtnEliminarProducto.Height = 150;
-            BtnAnularFactura.Height = 150;
-            BtnEliminarProveedor.Height = 150;
-            BtnModificarCliente.Height = 150;
-            BtnModificarProducto.Height = 150;
-            BtnModificarFactura.Height = 150;
-            BtnModificarProveedor.Height = 150;
-            BtnNuevoCliente.Height = 150;
-            BtnNuevoProducto.Height = 150;
-            BtnNuevaFactura.Height = 150;
-            BtnNuevoProveedor.Height = 150;
+            BtnConsultarClientes.Width = 250;
+            BtnConsultarProductos.Width = 250;
+            BtnConsultarFacturas.Width = 250;
+            BtnConsultarProveedores.Width = 250;
+            BtnEliminarCliente.Width = 250;
+            BtnEliminarProducto.Width = 250;
+            BtnAnularFactura.Width = 250;
+            BtnEliminarProveedor.Width = 250;
+            BtnModificarCliente.Width = 250;
+            BtnModificarProducto.Width = 250;
+            BtnModificarFactura.Width = 250;
+            BtnModificarProveedor.Width = 250;
+            BtnNuevoCliente.Width = 250;
+            BtnNuevoProducto.Width = 250;
+            BtnNuevaFactura.Width = 250;
+            BtnNuevoProveedor.Width = 250;
+            BtnConsultarClientes.Height = 250;
+            BtnConsultarProductos.Height = 250;
+            BtnConsultarFacturas.Height = 250;
+            BtnConsultarProveedores.Height = 250;
+            BtnEliminarCliente.Height = 250;
+            BtnEliminarProducto.Height = 250;
+            BtnAnularFactura.Height = 250;
+            BtnEliminarProveedor.Height = 250;
+            BtnModificarCliente.Height = 250;
+            BtnModificarProducto.Height = 250;
+            BtnModificarFactura.Height = 250;
+            BtnModificarProveedor.Height = 250;
+            BtnNuevoCliente.Height = 250;
+            BtnNuevoProducto.Height = 250;
+            BtnNuevaFactura.Height = 250;
+            BtnNuevoProveedor.Height = 250;
         }
 
         private void BtnFacturas_Click(object sender, EventArgs e)
@@ -107,6 +106,11 @@ namespace proyecto.Formularios
         }
 
         private void FrmEscritorio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuStripPrincipal_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

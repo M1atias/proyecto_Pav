@@ -89,6 +89,7 @@
             this.MenuStripPrincipal.Size = new System.Drawing.Size(1079, 24);
             this.MenuStripPrincipal.TabIndex = 0;
             this.MenuStripPrincipal.Text = "menuStrip1";
+            this.MenuStripPrincipal.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStripPrincipal_ItemClicked);
             // 
             // archivoToolStripMenuItem
             // 
