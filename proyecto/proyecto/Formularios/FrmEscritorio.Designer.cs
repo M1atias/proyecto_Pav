@@ -282,6 +282,7 @@
             this.PanelMenuSecundario.Name = "PanelMenuSecundario";
             this.PanelMenuSecundario.Size = new System.Drawing.Size(420, 339);
             this.PanelMenuSecundario.TabIndex = 0;
+            this.PanelMenuSecundario.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelMenuSecundario_Paint);
             // 
             // TableFacturas
             // 
@@ -296,21 +297,21 @@
             this.TableFacturas.Controls.Add(this.BtnConsultarFacturas, 1, 1);
             this.TableFacturas.Controls.Add(this.BtnNuevaFactura, 0, 0);
             this.TableFacturas.Controls.Add(this.BtnModificarFactura, 1, 0);
-            this.TableFacturas.Location = new System.Drawing.Point(6, 167);
+            this.TableFacturas.Location = new System.Drawing.Point(138, 3);
             this.TableFacturas.Name = "TableFacturas";
             this.TableFacturas.RowCount = 2;
             this.TableFacturas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TableFacturas.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableFacturas.Size = new System.Drawing.Size(195, 166);
+            this.TableFacturas.Size = new System.Drawing.Size(135, 106);
             this.TableFacturas.TabIndex = 0;
             this.TableFacturas.Visible = false;
             // 
             // BtnAnularFactura
             // 
             this.BtnAnularFactura.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnAnularFactura.Location = new System.Drawing.Point(6, 91);
+            this.BtnAnularFactura.Location = new System.Drawing.Point(3, 56);
             this.BtnAnularFactura.Name = "BtnAnularFactura";
-            this.BtnAnularFactura.Size = new System.Drawing.Size(84, 67);
+            this.BtnAnularFactura.Size = new System.Drawing.Size(61, 47);
             this.BtnAnularFactura.TabIndex = 2;
             this.BtnAnularFactura.Text = "Anular Factura";
             this.BtnAnularFactura.UseVisualStyleBackColor = true;
@@ -318,9 +319,9 @@
             // BtnConsultarFacturas
             // 
             this.BtnConsultarFacturas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnConsultarFacturas.Location = new System.Drawing.Point(103, 91);
+            this.BtnConsultarFacturas.Location = new System.Drawing.Point(70, 56);
             this.BtnConsultarFacturas.Name = "BtnConsultarFacturas";
-            this.BtnConsultarFacturas.Size = new System.Drawing.Size(85, 67);
+            this.BtnConsultarFacturas.Size = new System.Drawing.Size(62, 47);
             this.BtnConsultarFacturas.TabIndex = 3;
             this.BtnConsultarFacturas.Text = "Consultar Facturas";
             this.BtnConsultarFacturas.UseVisualStyleBackColor = true;
@@ -328,9 +329,9 @@
             // BtnNuevaFactura
             // 
             this.BtnNuevaFactura.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnNuevaFactura.Location = new System.Drawing.Point(6, 8);
+            this.BtnNuevaFactura.Location = new System.Drawing.Point(3, 3);
             this.BtnNuevaFactura.Name = "BtnNuevaFactura";
-            this.BtnNuevaFactura.Size = new System.Drawing.Size(84, 66);
+            this.BtnNuevaFactura.Size = new System.Drawing.Size(61, 47);
             this.BtnNuevaFactura.TabIndex = 0;
             this.BtnNuevaFactura.Text = "Nueva Factura";
             this.BtnNuevaFactura.UseVisualStyleBackColor = true;
@@ -338,9 +339,9 @@
             // BtnModificarFactura
             // 
             this.BtnModificarFactura.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnModificarFactura.Location = new System.Drawing.Point(103, 8);
+            this.BtnModificarFactura.Location = new System.Drawing.Point(70, 3);
             this.BtnModificarFactura.Name = "BtnModificarFactura";
-            this.BtnModificarFactura.Size = new System.Drawing.Size(85, 66);
+            this.BtnModificarFactura.Size = new System.Drawing.Size(62, 47);
             this.BtnModificarFactura.TabIndex = 1;
             this.BtnModificarFactura.Text = "Mofificar Factura";
             this.BtnModificarFactura.UseVisualStyleBackColor = true;
@@ -359,21 +360,22 @@
             this.TableProductos.Controls.Add(this.BtnModificarProducto, 1, 0);
             this.TableProductos.Controls.Add(this.BtnEliminarProducto, 0, 1);
             this.TableProductos.Controls.Add(this.BtnConsultarProductos, 1, 1);
-            this.TableProductos.Location = new System.Drawing.Point(204, 3);
+            this.TableProductos.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.TableProductos.Location = new System.Drawing.Point(276, 3);
             this.TableProductos.Name = "TableProductos";
             this.TableProductos.RowCount = 2;
             this.TableProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TableProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableProductos.Size = new System.Drawing.Size(216, 155);
+            this.TableProductos.Size = new System.Drawing.Size(135, 106);
             this.TableProductos.TabIndex = 0;
             this.TableProductos.Visible = false;
             // 
             // BtnNuevoProducto
             // 
             this.BtnNuevoProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnNuevoProducto.Location = new System.Drawing.Point(19, 22);
+            this.BtnNuevoProducto.Location = new System.Drawing.Point(3, 10);
             this.BtnNuevoProducto.Name = "BtnNuevoProducto";
-            this.BtnNuevoProducto.Size = new System.Drawing.Size(70, 32);
+            this.BtnNuevoProducto.Size = new System.Drawing.Size(61, 32);
             this.BtnNuevoProducto.TabIndex = 0;
             this.BtnNuevoProducto.Text = "Nuevo Producto";
             this.BtnNuevoProducto.UseVisualStyleBackColor = true;
@@ -381,9 +383,9 @@
             // BtnModificarProducto
             // 
             this.BtnModificarProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnModificarProducto.Location = new System.Drawing.Point(127, 22);
+            this.BtnModificarProducto.Location = new System.Drawing.Point(70, 10);
             this.BtnModificarProducto.Name = "BtnModificarProducto";
-            this.BtnModificarProducto.Size = new System.Drawing.Size(70, 32);
+            this.BtnModificarProducto.Size = new System.Drawing.Size(62, 32);
             this.BtnModificarProducto.TabIndex = 1;
             this.BtnModificarProducto.Text = "Mofificar Producto";
             this.BtnModificarProducto.UseVisualStyleBackColor = true;
@@ -391,9 +393,9 @@
             // BtnEliminarProducto
             // 
             this.BtnEliminarProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnEliminarProducto.Location = new System.Drawing.Point(19, 100);
+            this.BtnEliminarProducto.Location = new System.Drawing.Point(3, 63);
             this.BtnEliminarProducto.Name = "BtnEliminarProducto";
-            this.BtnEliminarProducto.Size = new System.Drawing.Size(70, 32);
+            this.BtnEliminarProducto.Size = new System.Drawing.Size(61, 32);
             this.BtnEliminarProducto.TabIndex = 2;
             this.BtnEliminarProducto.Text = "Eliminar Producto";
             this.BtnEliminarProducto.UseVisualStyleBackColor = true;
@@ -401,9 +403,9 @@
             // BtnConsultarProductos
             // 
             this.BtnConsultarProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnConsultarProductos.Location = new System.Drawing.Point(127, 100);
+            this.BtnConsultarProductos.Location = new System.Drawing.Point(70, 63);
             this.BtnConsultarProductos.Name = "BtnConsultarProductos";
-            this.BtnConsultarProductos.Size = new System.Drawing.Size(70, 32);
+            this.BtnConsultarProductos.Size = new System.Drawing.Size(62, 32);
             this.BtnConsultarProductos.TabIndex = 3;
             this.BtnConsultarProductos.Text = "Consultar Productos";
             this.BtnConsultarProductos.UseVisualStyleBackColor = true;
@@ -426,7 +428,7 @@
             this.TableClientes.RowCount = 2;
             this.TableClientes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TableClientes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableClientes.Size = new System.Drawing.Size(201, 165);
+            this.TableClientes.Size = new System.Drawing.Size(135, 106);
             this.TableClientes.TabIndex = 0;
             this.TableClientes.Visible = false;
             // 
@@ -435,7 +437,7 @@
             this.BtnNuevoCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnNuevoCliente.Location = new System.Drawing.Point(3, 3);
             this.BtnNuevoCliente.Name = "BtnNuevoCliente";
-            this.BtnNuevoCliente.Size = new System.Drawing.Size(94, 76);
+            this.BtnNuevoCliente.Size = new System.Drawing.Size(61, 47);
             this.BtnNuevoCliente.TabIndex = 0;
             this.BtnNuevoCliente.Text = "Nuevo Cliente";
             this.BtnNuevoCliente.UseVisualStyleBackColor = true;
@@ -443,9 +445,9 @@
             // BtnModificarCliente
             // 
             this.BtnModificarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnModificarCliente.Location = new System.Drawing.Point(103, 3);
+            this.BtnModificarCliente.Location = new System.Drawing.Point(70, 3);
             this.BtnModificarCliente.Name = "BtnModificarCliente";
-            this.BtnModificarCliente.Size = new System.Drawing.Size(95, 76);
+            this.BtnModificarCliente.Size = new System.Drawing.Size(62, 47);
             this.BtnModificarCliente.TabIndex = 1;
             this.BtnModificarCliente.Text = "Mofificar Cliente";
             this.BtnModificarCliente.UseVisualStyleBackColor = true;
@@ -453,9 +455,9 @@
             // BtnEliminarCliente
             // 
             this.BtnEliminarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnEliminarCliente.Location = new System.Drawing.Point(3, 85);
+            this.BtnEliminarCliente.Location = new System.Drawing.Point(3, 56);
             this.BtnEliminarCliente.Name = "BtnEliminarCliente";
-            this.BtnEliminarCliente.Size = new System.Drawing.Size(94, 77);
+            this.BtnEliminarCliente.Size = new System.Drawing.Size(61, 47);
             this.BtnEliminarCliente.TabIndex = 2;
             this.BtnEliminarCliente.Text = "Eliminar Cliente";
             this.BtnEliminarCliente.UseVisualStyleBackColor = true;
@@ -463,9 +465,9 @@
             // BtnConsultarClientes
             // 
             this.BtnConsultarClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnConsultarClientes.Location = new System.Drawing.Point(103, 85);
+            this.BtnConsultarClientes.Location = new System.Drawing.Point(70, 56);
             this.BtnConsultarClientes.Name = "BtnConsultarClientes";
-            this.BtnConsultarClientes.Size = new System.Drawing.Size(95, 77);
+            this.BtnConsultarClientes.Size = new System.Drawing.Size(62, 47);
             this.BtnConsultarClientes.TabIndex = 3;
             this.BtnConsultarClientes.Text = "Consultar Clientes";
             this.BtnConsultarClientes.UseVisualStyleBackColor = true;
@@ -483,12 +485,12 @@
             this.TableProveedores.Controls.Add(this.BtnModificarProveedor, 1, 0);
             this.TableProveedores.Controls.Add(this.BtnEliminarProveedor, 0, 1);
             this.TableProveedores.Controls.Add(this.BtnConsultarProveedores, 1, 1);
-            this.TableProveedores.Location = new System.Drawing.Point(204, 164);
+            this.TableProveedores.Location = new System.Drawing.Point(3, 112);
             this.TableProveedores.Name = "TableProveedores";
             this.TableProveedores.RowCount = 2;
             this.TableProveedores.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TableProveedores.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableProveedores.Size = new System.Drawing.Size(216, 175);
+            this.TableProveedores.Size = new System.Drawing.Size(135, 106);
             this.TableProveedores.TabIndex = 0;
             this.TableProveedores.Visible = false;
             // 
@@ -497,7 +499,7 @@
             this.BtnNuevoProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnNuevoProveedor.Location = new System.Drawing.Point(3, 3);
             this.BtnNuevoProveedor.Name = "BtnNuevoProveedor";
-            this.BtnNuevoProveedor.Size = new System.Drawing.Size(102, 81);
+            this.BtnNuevoProveedor.Size = new System.Drawing.Size(61, 47);
             this.BtnNuevoProveedor.TabIndex = 0;
             this.BtnNuevoProveedor.Text = "Nuevo Proveedor";
             this.BtnNuevoProveedor.UseVisualStyleBackColor = true;
@@ -505,9 +507,9 @@
             // BtnModificarProveedor
             // 
             this.BtnModificarProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnModificarProveedor.Location = new System.Drawing.Point(111, 3);
+            this.BtnModificarProveedor.Location = new System.Drawing.Point(70, 3);
             this.BtnModificarProveedor.Name = "BtnModificarProveedor";
-            this.BtnModificarProveedor.Size = new System.Drawing.Size(102, 81);
+            this.BtnModificarProveedor.Size = new System.Drawing.Size(62, 47);
             this.BtnModificarProveedor.TabIndex = 1;
             this.BtnModificarProveedor.Text = "Mofificar Proveedor";
             this.BtnModificarProveedor.UseVisualStyleBackColor = true;
@@ -515,9 +517,9 @@
             // BtnEliminarProveedor
             // 
             this.BtnEliminarProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnEliminarProveedor.Location = new System.Drawing.Point(3, 90);
+            this.BtnEliminarProveedor.Location = new System.Drawing.Point(3, 56);
             this.BtnEliminarProveedor.Name = "BtnEliminarProveedor";
-            this.BtnEliminarProveedor.Size = new System.Drawing.Size(102, 82);
+            this.BtnEliminarProveedor.Size = new System.Drawing.Size(61, 47);
             this.BtnEliminarProveedor.TabIndex = 2;
             this.BtnEliminarProveedor.Text = "Eliminar Proveedor";
             this.BtnEliminarProveedor.UseVisualStyleBackColor = true;
@@ -525,9 +527,9 @@
             // BtnConsultarProveedores
             // 
             this.BtnConsultarProveedores.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnConsultarProveedores.Location = new System.Drawing.Point(111, 90);
+            this.BtnConsultarProveedores.Location = new System.Drawing.Point(70, 56);
             this.BtnConsultarProveedores.Name = "BtnConsultarProveedores";
-            this.BtnConsultarProveedores.Size = new System.Drawing.Size(102, 82);
+            this.BtnConsultarProveedores.Size = new System.Drawing.Size(62, 47);
             this.BtnConsultarProveedores.TabIndex = 3;
             this.BtnConsultarProveedores.Text = "Consultar Proveedores";
             this.BtnConsultarProveedores.UseVisualStyleBackColor = true;
@@ -545,6 +547,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Escritorio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmEscritorio_Load);
             this.MenuStripPrincipal.ResumeLayout(false);
             this.MenuStripPrincipal.PerformLayout();
             this.ToolStripPrincipal.ResumeLayout(false);

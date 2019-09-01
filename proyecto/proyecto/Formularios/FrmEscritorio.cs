@@ -45,7 +45,7 @@ namespace proyecto.Formularios
             BtnModificarProveedor.Width = 150;
             BtnNuevoCliente.Width = 150;
             BtnNuevoProducto.Width = 150;
-            BtnNuevaFactura.Width = 150;
+            BtnNuevaFactura.Width = 180;
             BtnNuevoProveedor.Width = 150;
 
             BtnConsultarClientes.Height = 150;
@@ -99,6 +99,16 @@ namespace proyecto.Formularios
             TableClientes.Visible = false;
             TableProveedores.Visible = true;
             
+        }
+
+        private void PanelMenuSecundario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmEscritorio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
