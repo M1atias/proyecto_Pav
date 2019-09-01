@@ -176,7 +176,7 @@
             this.BtnFacturas.Name = "BtnFacturas";
             this.BtnFacturas.Size = new System.Drawing.Size(207, 129);
             this.BtnFacturas.TabIndex = 0;
-            this.BtnFacturas.Text = "kkkkkk";
+            this.BtnFacturas.Text = "probando rama";
             this.BtnFacturas.UseVisualStyleBackColor = true;
             this.BtnFacturas.Click += new System.EventHandler(this.BtnFacturas_Click);
             // 
